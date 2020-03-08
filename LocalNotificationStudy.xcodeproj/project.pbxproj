@@ -13,6 +13,7 @@
 		1B02DFC32414FB0C008137C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B02DFC12414FB0C008137C7 /* Main.storyboard */; };
 		1B02DFC52414FB0F008137C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B02DFC42414FB0F008137C7 /* Assets.xcassets */; };
 		1B02DFC82414FB0F008137C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B02DFC62414FB0F008137C7 /* LaunchScreen.storyboard */; };
+		1B02DFD02414FC3A008137C7 /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02DFCF2414FC3A008137C7 /* LocalNotificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1B02DFC42414FB0F008137C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B02DFC72414FB0F008137C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B02DFC92414FB0F008137C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B02DFCF2414FC3A008137C7 /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1B02DFC42414FB0F008137C7 /* Assets.xcassets */,
 				1B02DFC62414FB0F008137C7 /* LaunchScreen.storyboard */,
 				1B02DFC92414FB0F008137C7 /* Info.plist */,
+				1B02DFCF2414FC3A008137C7 /* LocalNotificationViewController.swift */,
 			);
 			path = LocalNotificationStudy;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B02DFC02414FB0C008137C7 /* ViewController.swift in Sources */,
+				1B02DFD02414FC3A008137C7 /* LocalNotificationViewController.swift in Sources */,
 				1B02DFBC2414FB0C008137C7 /* AppDelegate.swift in Sources */,
 				1B02DFBE2414FB0C008137C7 /* SceneDelegate.swift in Sources */,
 			);
