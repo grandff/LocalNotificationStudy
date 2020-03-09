@@ -45,7 +45,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wwz-k6-L9t">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2. Custom Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wwz-k6-L9t">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -54,6 +54,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sxb-1v-E4b" kind="show" id="hKm-Qe-3bY"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="6UY-g1-zJm" style="IBUITableViewCellStyleDefault" id="0pL-Sa-3SH">
                                         <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
@@ -62,7 +65,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6UY-g1-zJm">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="3. Attachment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6UY-g1-zJm">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="VlT-2X-m7O" kind="show" id="MOg-ax-fmX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Ewv-AW-fN5" style="IBUITableViewCellStyleDefault" id="4VX-3c-01u">
+                                        <rect key="frame" x="0.0" y="158.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4VX-3c-01u" id="oRV-aP-GqM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ewv-AW-fN5">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -85,6 +108,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRo-QP-KPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="114.50892857142857"/>
+        </scene>
+        <!--Attachments-->
+        <scene sceneID="Lc0-aJ-MZY">
+            <objects>
+                <viewController id="VlT-2X-m7O" customClass="AttachmentsViewController" customModule="LocalNotificationStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cw-Jy-iga">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlI-Fy-EHY">
+                                <rect key="frame" x="144" y="641" width="126" height="30"/>
+                                <state key="normal" title="Image Attachment"/>
+                                <connections>
+                                    <action selector="addImageAttachment:" destination="VlT-2X-m7O" eventType="touchUpInside" id="SWJ-vw-ri3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmH-eV-gXq">
+                                <rect key="frame" x="146" y="716" width="123" height="30"/>
+                                <state key="normal" title="Audio Attachment"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hT3-Eg-Kmw">
+                                <rect key="frame" x="146" y="797" width="123" height="30"/>
+                                <state key="normal" title="Video Attachment"/>
+                                <connections>
+                                    <action selector="addVideoAttachment:" destination="VlT-2X-m7O" eventType="touchUpInside" id="mNq-Hy-ew9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f16-vJ-arW" firstAttribute="trailing" secondItem="hT3-Eg-Kmw" secondAttribute="trailing" constant="145" id="GNh-vo-5PL"/>
+                            <constraint firstItem="f16-vJ-arW" firstAttribute="bottom" secondItem="hT3-Eg-Kmw" secondAttribute="bottom" constant="35" id="HBu-h3-RUv"/>
+                            <constraint firstItem="f16-vJ-arW" firstAttribute="trailing" secondItem="cmH-eV-gXq" secondAttribute="trailing" constant="145" id="Llz-6c-Xtj"/>
+                            <constraint firstItem="XlI-Fy-EHY" firstAttribute="leading" secondItem="f16-vJ-arW" secondAttribute="leading" constant="144" id="MVF-Lf-dbG"/>
+                            <constraint firstItem="f16-vJ-arW" firstAttribute="trailing" secondItem="XlI-Fy-EHY" secondAttribute="trailing" constant="144" id="Mm0-lT-fjz"/>
+                            <constraint firstItem="hT3-Eg-Kmw" firstAttribute="leading" secondItem="f16-vJ-arW" secondAttribute="leading" constant="146" id="WG7-2G-7TG"/>
+                            <constraint firstItem="XlI-Fy-EHY" firstAttribute="top" secondItem="f16-vJ-arW" secondAttribute="top" constant="553" id="p5l-N5-Kmu"/>
+                            <constraint firstItem="cmH-eV-gXq" firstAttribute="leading" secondItem="f16-vJ-arW" secondAttribute="leading" constant="146" id="pAm-Yc-Y5e"/>
+                            <constraint firstItem="hT3-Eg-Kmw" firstAttribute="top" secondItem="cmH-eV-gXq" secondAttribute="bottom" constant="51" id="yvP-p1-TML"/>
+                            <constraint firstItem="cmH-eV-gXq" firstAttribute="top" secondItem="XlI-Fy-EHY" secondAttribute="bottom" constant="45" id="znN-Ga-uPP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f16-vJ-arW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Attachments" id="RQl-vA-5ts"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hML-Qc-DhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896" y="542"/>
         </scene>
         <!--Local Notification-->
         <scene sceneID="XWZ-s6-a7W">
@@ -143,7 +214,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gu-ZL-lrW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1979.7101449275365" y="114.50892857142857"/>
+            <point key="canvasLocation" x="1896" y="-130"/>
+        </scene>
+        <!--Custom Sound-->
+        <scene sceneID="ZaL-11-NP0">
+            <objects>
+                <viewController id="sxb-1v-E4b" customClass="CustomSoundViewController" customModule="LocalNotificationStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SvV-A0-EM8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yav-Wz-mm2">
+                                <rect key="frame" x="156" y="809" width="102" height="30"/>
+                                <state key="normal" title="Custom Sound"/>
+                                <connections>
+                                    <action selector="useCustomSound:" destination="sxb-1v-E4b" eventType="touchUpInside" id="v7M-5k-D5c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yav-Wz-mm2" firstAttribute="leading" secondItem="aOB-1c-zIt" secondAttribute="leading" constant="156" id="3cj-u5-lI8"/>
+                            <constraint firstItem="aOB-1c-zIt" firstAttribute="trailing" secondItem="yav-Wz-mm2" secondAttribute="trailing" constant="156" id="3sP-cW-rxW"/>
+                            <constraint firstItem="yav-Wz-mm2" firstAttribute="top" secondItem="aOB-1c-zIt" secondAttribute="top" constant="721" id="eif-KN-axg"/>
+                            <constraint firstItem="aOB-1c-zIt" firstAttribute="bottom" secondItem="yav-Wz-mm2" secondAttribute="bottom" constant="23" id="iBK-Qp-d2Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aOB-1c-zIt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom Sound" id="aDf-S9-dge"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vte-ie-eYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2762" y="-131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XcG-Ft-oYa">
