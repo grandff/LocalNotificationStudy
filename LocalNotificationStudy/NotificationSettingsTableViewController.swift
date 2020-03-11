@@ -56,6 +56,7 @@ class NotificationSettingsTableViewController: UITableViewController {
             let request = UNNotificationRequest(identifier: "HelloNoti", content: content, trigger: trigger)
             
             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+            print("test")
         }
         
     }
