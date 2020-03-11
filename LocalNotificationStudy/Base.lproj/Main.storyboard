@@ -85,7 +85,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ewv-AW-fN5">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="4. Actionable Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ewv-AW-fN5">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -94,6 +94,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="kK9-Hc-DO3" kind="show" id="8xc-VA-Bg2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -156,6 +159,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hML-Qc-DhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1896" y="542"/>
+        </scene>
+        <!--Actionable Notification-->
+        <scene sceneID="pYM-0W-dpd">
+            <objects>
+                <viewController id="kK9-Hc-DO3" customClass="ActionableNotificationViewController" customModule="LocalNotificationStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yQh-0h-MHx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question" translatesAutoresizingMaskIntoConstraints="NO" id="PTw-1h-dGX">
+                                <rect key="frame" x="79" y="320" width="256" height="256"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6Q-lC-DkM">
+                                <rect key="frame" x="175" y="832" width="64" height="30"/>
+                                <state key="normal" title="Schedule"/>
+                                <connections>
+                                    <action selector="schedule:" destination="kK9-Hc-DO3" eventType="touchUpInside" id="Z1Y-ME-2fI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="o6Q-lC-DkM" firstAttribute="leading" secondItem="HCt-hF-YIC" secondAttribute="leading" constant="175" id="DM6-aG-qJB"/>
+                            <constraint firstItem="HCt-hF-YIC" firstAttribute="trailing" secondItem="o6Q-lC-DkM" secondAttribute="trailing" constant="175" id="KvY-An-5JQ"/>
+                            <constraint firstItem="o6Q-lC-DkM" firstAttribute="top" secondItem="PTw-1h-dGX" secondAttribute="bottom" constant="256" id="fOo-OW-JNL"/>
+                            <constraint firstItem="o6Q-lC-DkM" firstAttribute="bottom" secondItem="HCt-hF-YIC" secondAttribute="bottom" id="fTq-8y-kFl"/>
+                            <constraint firstItem="PTw-1h-dGX" firstAttribute="centerX" secondItem="yQh-0h-MHx" secondAttribute="centerX" id="gcu-8y-rIR"/>
+                            <constraint firstItem="PTw-1h-dGX" firstAttribute="centerY" secondItem="yQh-0h-MHx" secondAttribute="centerY" id="vwS-IS-dAq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HCt-hF-YIC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Actionable Notification" id="Gbd-uC-yEp"/>
+                    <connections>
+                        <outlet property="imageView" destination="PTw-1h-dGX" id="hFj-Uh-uZK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QV7-1r-IlF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2760.8695652173915" y="541.74107142857144"/>
         </scene>
         <!--Local Notification-->
         <scene sceneID="XWZ-s6-a7W">
@@ -266,4 +308,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="question" width="256" height="256"/>
+    </resources>
 </document>
