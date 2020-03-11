@@ -18,6 +18,7 @@
 		1B20F60D241670220050AC66 /* hello.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B20F60B241670220050AC66 /* hello.png */; };
 		1B20F60E241670220050AC66 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B20F60C241670220050AC66 /* logo.png */; };
 		1B9F76482418942C00792123 /* ActionableNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F76472418942C00792123 /* ActionableNotificationViewController.swift */; };
+		1BA5DA372419103000065C42 /* NotificationSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA362419103000065C42 /* NotificationSettingsTableViewController.swift */; };
 		1BAB534B2415F41E00EA5CF0 /* CustomSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB534A2415F41E00EA5CF0 /* CustomSoundViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		1B20F60C241670220050AC66 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		1B20F60F2416702C0050AC66 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		1B9F76472418942C00792123 /* ActionableNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionableNotificationViewController.swift; sourceTree = "<group>"; };
+		1BA5DA362419103000065C42 /* NotificationSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsTableViewController.swift; sourceTree = "<group>"; };
 		1BAB534A2415F41E00EA5CF0 /* CustomSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				1BAB534A2415F41E00EA5CF0 /* CustomSoundViewController.swift */,
 				1B20F60724166FDA0050AC66 /* AttachmentsViewController.swift */,
 				1B9F76472418942C00792123 /* ActionableNotificationViewController.swift */,
+				1BA5DA362419103000065C42 /* NotificationSettingsTableViewController.swift */,
 			);
 			path = LocalNotificationStudy;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				1B20F60824166FDA0050AC66 /* AttachmentsViewController.swift in Sources */,
 				1B02DFBE2414FB0C008137C7 /* SceneDelegate.swift in Sources */,
 				1BAB534B2415F41E00EA5CF0 /* CustomSoundViewController.swift in Sources */,
+				1BA5DA372419103000065C42 /* NotificationSettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
