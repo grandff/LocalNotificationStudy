@@ -58,11 +58,7 @@ class ActionableNotificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // background를 통해 다시 접근할 경우 이미지 호출 (5)
-        NotificationCenter.default.addObserver(self, selector: #selector(updateSelection), name: NSNotification.Name.didBecomeActiveNotification, object: nil)
-        
-        NSNotification.Name.NSExtensionHostDidBecomeActive
-        
-        // 시벌 이거 왜안돼
+        NotificationCenter.default.addObserver(self, selector: #selector(updateSelection), name: UIApplication.didBecomeActiveNotification, object: nil)        
     }
     
 
